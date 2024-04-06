@@ -1,0 +1,168 @@
+body{
+background-color:#ECECECCE ;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+header{
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4F7088;
+    padding: 0px 16px;
+}
+img {
+    max-width: 100%;
+}
+
+header nav ul,footer nav ul {
+    display: flex;
+    list-style-type: none;
+    gap: 16px;
+    margin-right: 32px;
+    margin-bottom: 32px;
+    margin-top: 32px;
+}
+
+header p {
+    color: #FFF;
+    font-weight: 500;
+    font-size: 48px;
+    font-family: "Roboto Mono";
+    margin-left: 32px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+header nav ul a {
+    text-decoration: underline;
+    color: #fff;
+    text-decoration: none;
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 1.2px;
+
+}
+
+header nav ul a:hover {
+    text-decoration: underline;
+    color: #fff;
+}
+
+.info {
+    display: grid;
+    max-width: 100%;
+    margin: auto;
+}
+.info h1 {
+    color: #4F7088;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 150%; /* 60px */
+    letter-spacing: -0.44px;
+    text-transform: uppercase;
+}
+
+.container {
+    max-width: 1120px;
+    margin: auto;
+    display: flex;
+    gap: 200px;
+    padding: 64px 160px;
+}
+
+.container .text {
+    width: 504px;
+    height: 26px;
+    flex-shrink: 0;
+}
+
+.container .text h2 {
+color: #374254;
+font-family: Roboto;
+font-size: 32px;
+font-style: normal;
+font-weight: 900;
+line-height: 120%; /* 38.4px */
+letter-spacing: -0.352px;
+}
+
+.container .text p {
+color:#374254;
+font-family: Roboto;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: 1.4;
+margin-bottom: 160px;
+}
+ 
+footer {
+        display: flex;
+        justify-content: space-between;
+        background-color: #4F7088;
+        font-size: 16px;
+        margin-top: 160px;
+}
+
+footer p {
+    color: #FFF;
+    font-weight: 500;
+    font-size: 24px;
+    font-family: "Roboto Mono";
+    margin-left: 32px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+footer nav ul a {
+    text-decoration: underline;
+    color: #fff;
+    text-decoration: none;
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 1.2px;
+    text-align: center;
+}
+
+footer nav ul a:hover {
+    text-decoration: underline;
+    color: #fff;
+}
+@media (max-width:600px) {
+    .info {
+        grid-template-columns: 1fr;
+        gap: 36px;
+        margin: 0;
+    }
+
+    .info h1 {
+        font-size: 42px;
+    }
+
+    .container .text {
+        width: 100%;
+        margin: 0%;
+    }
+    
+    .container .image {
+        width: 100%;
+    }
+
+    .container {
+        flex-direction: column;
+        gap: 36px;
+        margin: 0%;
+    }
+    
+}
